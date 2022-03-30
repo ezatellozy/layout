@@ -26,7 +26,7 @@ body .flatpickr-calendar {
   background-color: #eee;
 }
 
-.agenda .card .card-header .week-days .carousel-item {
+.agenda .card .card-header .week-days .day {
   /* display: flex; */
   padding: 4px;
   border-top: 4px solid #7367f0;
@@ -49,6 +49,7 @@ body .flatpickr-calendar {
   font-size: 12px;
   border-radius: 50%;
   padding: 4px;
+  margin: auto;
 }
 
 .agenda .card .card-header .week-days .day a span {
@@ -66,10 +67,10 @@ body .flatpickr-calendar {
   height: 20px;
 }
 
-.agenda .card .card-header .week-days .carousel-item.active {
+.agenda .card .card-header .week-days .day.active {
   border: transparent !important;
 }
-.agenda .card .card-header .week-days .carousel-item.active a {
+.agenda .card .card-header .week-days .day.active a {
   border-radius: unset;
   background-color: #7367f0;
   color: white;
