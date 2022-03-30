@@ -20,26 +20,20 @@ body .flatpickr-calendar {
 }
 
 .agenda .card .card-header .agenda-calendar > div {
+  right: 50px;
   top: 60px;
-  left: 0;
   z-index: 11;
   background-color: #eee;
 }
 
-.agenda .card .card-header .week-days .day {
-  display: flex;
+.agenda .card .card-header .week-days .carousel-item {
+  /* display: flex; */
   padding: 4px;
   border-top: 4px solid #7367f0;
   background-color: rgb(233, 233, 233);
   /* border: 1px solid; */
   margin: 0 2px;
   font-size: 14px;
-}
-.agenda .card .card-header .week-days .action-arrow {
-  background: none;
-  border: none;
-  padding: 0;
-  margin: 0;
 }
 
 .agenda .card .card-header .week-days .day a {
@@ -61,10 +55,21 @@ body .flatpickr-calendar {
   font-weight: normal;
   font-size: 12px;
 }
-.agenda .card .card-header .week-days .day.active {
+
+.agenda .carousel {
+  max-height: 74px;
+  min-width: 77px;
+  overflow: hidden;
+}
+.agenda .carousel .carousel-control-prev .feather {
+  width: 20px;
+  height: 20px;
+}
+
+.agenda .card .card-header .week-days .carousel-item.active {
   border: transparent !important;
 }
-.agenda .card .card-header .week-days .day.active a {
+.agenda .card .card-header .week-days .carousel-item.active a {
   border-radius: unset;
   background-color: #7367f0;
   color: white;

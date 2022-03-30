@@ -85,11 +85,7 @@
       type="text/css"
       href="./app-assets/css/core/menu/menu-types/vertical-menu.css"
     />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="./app-assets/vendors/css/tables/datatable/dataTables.bootstrap5.min.css"
-    />
+
     <link
       rel="stylesheet"
       type="text/css"
@@ -100,26 +96,7 @@
       type="text/css"
       href="./app-assets/vendors/css/tables/datatable/buttons.bootstrap5.min.css"
     />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="./app-assets/vendors/css/tables/datatable/extensions/dataTables.checkboxes.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="./app-assets/vendors/css/tables/datatable/extensions/dataTables.select.min.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="./app-assets/css/plugins/forms/form-validation.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="./app-assets/vendors/css/tables/datatable/select.dataTables.min.css"
-    />
+
     <link
       rel="stylesheet"
       type="text/css"
@@ -130,13 +107,6 @@
       type="text/css"
       href="./app-assets/css/plugins/forms/pickers/form-flat-pickr.css"
     />
-
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="./app-assets/css/pages/app-user.css"
-    />
-    <!-- END: Page CSS-->
 
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
@@ -398,128 +368,113 @@
       <div class="content-overlay"></div>
       <div class="header-navbar-shadow"></div>
       <div class="content-wrapper container-xxl p-0">
-        <div class="content-header">
-          <div class="content-header-left col-md-9 col-12 mb-2">
-            <div class="row breadcrumbs-top">
-              <div class="col-12">
-                <h2 class="content-header-title float-start mb-0">Home</h2>
-                <div class="breadcrumb-wrapper">
-                  <ol class="breadcrumb">
-                    <li class="breadcrumb-item active">
-                      <a href="index.html">Home</a>
-                    </li>
-                    <li class="breadcrumb-item">agenda</li>
-                  </ol>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="content-header-right text-md-end col-md-3 col-12 d-md-block d-none"
-          >
-            <div class="mb-1 breadcrumb-right">
-              <div class="dropdown">
-                <button
-                  class="btn-icon btn btn-primary btn-round btn-sm dropdown-toggle"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  <i data-feather="grid"></i>
-                </button>
-                <div class="dropdown-menu dropdown-menu-end">
-                  <a class="dropdown-item" href="#"
-                    ><i class="me-1" data-feather="check-square"></i
-                    ><span class="align-middle">Todo</span></a
-                  ><a class="dropdown-item" href="#"
-                    ><i class="me-1" data-feather="message-square"></i
-                    ><span class="align-middle">Chat</span></a
-                  ><a class="dropdown-item" href="#"
-                    ><i class="me-1" data-feather="mail"></i
-                    ><span class="align-middle">Email</span></a
-                  ><a class="dropdown-item" href="#"
-                    ><i class="me-1" data-feather="calendar"></i
-                    ><span class="align-middle">Calendar</span></a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
         <div class="content-body">
-          <!-- Kick start -->
+
 
           <section class="agenda">
-            <!-- users filter start -->
             <div class="card">
 
               <div class="card-header justify-content-around">
-                <div class="w-100  position-relative  d-flex justify-content-center align-items-center flex-wrap ">
+                <div class="w-100  position-relative  d-flex justify-content-between align-items-center flex-wrap ">
 
-                  <div class="d-none calendar-wrapper">
-                    <button
-                      class="btn btn-primary"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#agendaCalendar"
-                      aria-expanded="false"
-                      aria-controls="agendaCalendar"
-                    >
-                      <i data-feather="calendar"></i>
+
+                  <div id="carouselDays" class="carousel slide" data-bs-interval="false"   data-bs-ride="carousel">
+ 
+                    <div class="carousel-inner week-days">
+                        <div class="carousel-item active">
+                          <div class="day active"><a> 1 <span>Sat</span> </a></a></div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="day"><a> 2 <span>Sat</span> </a></a></div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="day"><a> 3 <span>Sat</span> </a></a></div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="day"><a> 4 <span>Sat</span> </a></a></div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="day"><a> 5 <span>Sat</span> </a></a></div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="day"><a> 6 <span>Sat</span> </a></a></div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselDays" data-bs-slide="prev">
+                        <i data-feather="chevrons-left" class="text-primary"></i>
+                        <span class="visually-hidden">Previous</span>
                     </button>
-                      <div class="agenda-calendar collapse " id="agendaCalendar">
-                          <div class="position-absolute">
-                            <input type="text" id="fp-range" class="form-control flatpickr-range open" placeholder="YYYY-MM-DD to YYYY-MM-DD" />
-                          </div>
-                        
-                      </div>
-                  </div>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselDays" data-bs-slide="next">
+                      <i data-feather="chevrons-right" class="text-primary"></i>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
 
-                    <div class="week-days d-flex justify-content-center">
+                <div class="d-flex ">
+                  <button
+                  class="btn btn-primary"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#agendaCalendar"
+                  aria-expanded="false"
+                  aria-controls="agendaCalendar"
+                >
+                  <i data-feather="calendar"></i>
+                </button>
+                  <div class="agenda-calendar collapse " id="agendaCalendar">
+                      <div class="position-absolute">
+                        <input type="text" id="fp-range" class="form-control flatpickr-range open" placeholder="YYYY-MM-DD to YYYY-MM-DD" />
+                      </div>
+                    
+                  </div>
+                  <div class="btn-group mx-2">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        Filter
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">اداري</a>
+                        <a class="dropdown-item" href="#"> جلسة</a>
+                        <a class="dropdown-item" href="#">عادي</a>
+                    </div>
+                </div>
+                <div class="d-none calendar-wrapper">
+                </div>
+         
+                </div>
+
+                    <!-- <div class="week-days d-flex justify-content-center">
                       <button class="action-arrow"><i data-feather='chevrons-left'></i>previous</button>
                       <div class="d-flex justify-content-center align-items-center">
-                        <div class="day"><a> 1 <span>Sat</span> </a></a></div>
+                        <div class="day active"><a> 1 <span>Sat</span> </a></a></div>
                         <div class="day"><a> 2 <span>Sat</span> </a></a></div>
                         <div class="day"><a> 3 <span>Sat</span> </a></a></div>
-                        <div class="day active"><a> 4 <span>Sat</span> </a></a></div>
+                        <div class="day "><a> 4 <span>Sat</span> </a></a></div>
                         <div class="day"><a> 5 <span>Sat</span> </a></a></div>
                         <div class="day"><a> 6 <span>Sat</span> </a></a></div>
                         <div class="day"><a> 7 <span>Sat</span> </a></a></div>
                       </div>
                       <button class="action-arrow">Next<i data-feather="chevrons-right"></i></button>
-                    </div>
+                    </div> -->
                 </div>
-                <div class="w-100 d-flex justify-content-around mt-2">
-                  <div>
-                    <div class="btn-group">
-                      <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                          Filter
-                      </button>
-                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="#">اداري</a>
-                          <a class="dropdown-item" href="#"> جلسة</a>
-                          <a class="dropdown-item" href="#">عادي</a>
+                <div class="w-100 d-flex justify-content-around mt-4">
+                    <div>
+                      <p class="m-0 p-0 text-primary font-weight-bold">
+                        30  /Mar/2022
+                      </p>
+                    </div>
+                    <div> 
+                      <div>
+                        <div class="btn-group">
+                        <button class="btn btn-primary dropdown-toggle"  type="button" id="actionMenu" data-bs-toggle="dropdown" aria-expanded="false">
+                            Add new
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="actionMenu">
+                            <a class="dropdown-item" href="#"> New 1 <i data-feather="plus"></i></a>
+                            <a class="dropdown-item" href="#">New 2 <i data-feather="plus"></i></a>
+                            <a class="dropdown-item" href="#">New 3 <i data-feather="plus"></i></a>
+                        </div>
                       </div>
-                  </div>
-                  </div>
-                  <div>
-                    <p class="m-0 p-0 text-primary font-weight-bold">
-
-                      30  /Mar/2022
-                    </p>
-                  </div>
-                  <div>                  <div>
-                    <div class="btn-group">
-                      <button class="btn btn-primary dropdown-toggle"  type="button" id="actionMenu" data-bs-toggle="dropdown" aria-expanded="false">
-                          Add new
-                      </button>
-                      <div class="dropdown-menu" aria-labelledby="actionMenu">
-                          <a class="dropdown-item" href="#"> New 1 <i data-feather="plus"></i></a>
-                          <a class="dropdown-item" href="#">New 2 <i data-feather="plus"></i></a>
-                          <a class="dropdown-item" href="#">New 3 <i data-feather="plus"></i></a>
-                      </div>
-                  </div></div>
+                    </div>
                 </div>
               </div>
 
@@ -586,12 +541,9 @@
                 </table>
             </div>
             </card-body>
-            <!-- users filter end -->
-            <!-- list section start -->
-            <!-- list section end -->
+  
           </section>
 
-          <!--/ Kick start -->
         </div>
       </div>
     </div>
@@ -632,7 +584,6 @@
     <!-- BEGIN: Theme JS-->
     <script src="./app-assets/js/core/app-menu.js"></script>
     <script src="./app-assets/js/core/app.js"></script>
-    <script src="./app-assets/vendors/js/tables/datatable/jquery.dataTables.min.js"></script>
     <script src="./app-assets/vendors/js/pickers/pickadate/picker.js"></script>
     <script src="./app-assets/vendors/js/pickers/pickadate/picker.date.js"></script>
     <script src="./app-assets/vendors/js/pickers/pickadate/legacy.js"></script>
@@ -642,17 +593,16 @@
     <script src="./app-assets/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
     <script src="./app-assets/vendors/js/tables/datatable/responsive.bootstrap4.js"></script>
     <script src="./app-assets/vendors/js/tables/datatable/responsive.bootstrap4.js"></script>
-    <script src="./app-assets/vendors/js/tables/datatable/datatables.buttons.min.js"></script>
     <script src="./app-assets/vendors/js/tables/datatable/buttons.bootstrap5.min.js"></script>
-    <script src="./app-assets/vendors/js/tables/datatable/datatables.checkboxes.min.js"></script>
-    <script src="./app-assets/vendors/js/forms/validation/jquery.validate.min.js"></script>
-    <script src="./app-assets/js/scripts/pages/app-user-list.js"></script>
+
     <!-- END: Theme JS-->
 
     <!-- BEGIN: Page JS-->
     <!-- END: Page JS-->
 
     <script>
+
+
       $(window).on("load", function () {
         if (feather) {
           feather.replace({
@@ -660,7 +610,16 @@
             height: 14,
           });
         }
-      });
+        $('.carousel .carousel-item').slick({
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+        })
+});
+
+
+
+
     </script>
   </body>
   <!-- END: Body-->
