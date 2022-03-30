@@ -10,6 +10,22 @@ NOTE:
 PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
 WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
 
+body .flatpickr-calendar {
+  /* display: inline-block !important; */
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+.agenda .card .card-header .calendar-wrapper {
+  display: block !important;
+}
+
+.agenda .card .card-header .agenda-calendar > div {
+  top: 60px;
+  left: 0;
+  z-index: 11;
+  background-color: #eee;
+}
+
 .agenda .card .card-header .week-days .day {
   display: flex;
   padding: 4px;
@@ -54,7 +70,7 @@ WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BET
   color: white;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .agenda .card .card-header .week-days .day {
     padding: 8px;
   }
@@ -71,4 +87,10 @@ WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BET
   width: 20px;
   height: 20px;
   color: #7367f0;
+}
+
+@media (max-width: 576px) {
+  .agenda .card .card-header .calendar-wrapper {
+    display: none !important;
+  }
 }
