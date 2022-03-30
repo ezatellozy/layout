@@ -10,11 +10,6 @@ NOTE:
 PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
 WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
 
-body .flatpickr-calendar {
-  /* display: inline-block !important; */
-  visibility: visible !important;
-  opacity: 1 !important;
-}
 .agenda .card .card-header .calendar-wrapper {
   display: block !important;
 }
@@ -24,6 +19,24 @@ body .flatpickr-calendar {
   top: 60px;
   z-index: 11;
   background-color: #eee;
+}
+.agenda .card .card-header .week-days {
+  position: relative;
+}
+.agenda .card .card-header .week-days .owl-nav {
+  position: relative;
+}
+.agenda .card .card-header .week-days .owl-nav .owl-prev,
+.agenda .card .card-header .week-days .owl-nav .owl-next {
+  top: -75px;
+  font-size: 30px;
+  position: absolute;
+}
+.agenda .card .card-header .week-days .owl-nav .owl-prev {
+  left: -20px;
+}
+.agenda .card .card-header .week-days .owl-nav .owl-next {
+  right: -20px;
 }
 
 .agenda .card .card-header .week-days .day {
@@ -51,7 +64,8 @@ body .flatpickr-calendar {
   padding: 4px;
   margin: auto;
 }
-
+.agenda .card .card-header .owl-carousel {
+}
 .agenda .card .card-header .week-days .day a span {
   font-weight: normal;
   font-size: 12px;
