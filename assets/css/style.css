@@ -1,0 +1,74 @@
+/*================================================================================
+	Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
+	Version: 2.0
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+
+.agenda .card .card-header .week-days .day {
+  display: flex;
+  padding: 4px;
+  border-top: 4px solid #7367f0;
+  background-color: rgb(233, 233, 233);
+  /* border: 1px solid; */
+  margin: 0 2px;
+  font-size: 14px;
+}
+.agenda .card .card-header .week-days .action-arrow {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.agenda .card .card-header .week-days .day a {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  color: #888;
+  font-weight: bold;
+  font-size: 12px;
+  border-radius: 50%;
+  padding: 4px;
+}
+
+.agenda .card .card-header .week-days .day a span {
+  font-weight: normal;
+  font-size: 12px;
+}
+.agenda .card .card-header .week-days .day.active {
+  border: transparent !important;
+}
+.agenda .card .card-header .week-days .day.active a {
+  border-radius: unset;
+  background-color: #7367f0;
+  color: white;
+}
+
+@media (min-width: 576px) {
+  .agenda .card .card-header .week-days .day {
+    padding: 8px;
+  }
+
+  .agenda .card .card-header .week-days .day a {
+    width: 50px;
+    height: 50px;
+
+    padding: 4px;
+  }
+}
+
+.agenda .card .table .btn .feather {
+  width: 20px;
+  height: 20px;
+  color: #7367f0;
+}
