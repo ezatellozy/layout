@@ -13,6 +13,15 @@ WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BET
 .agenda .card .card-header .calendar-wrapper {
   display: block !important;
 }
+.dropdown-toggle::after{
+  display: none;
+}
+
+.table .header th{
+background-color: #7367f0 !important;
+color: white;
+font-weight: bold;
+}
 
 .agenda .card .card-header .agenda-calendar > div {
   right: 50px;
